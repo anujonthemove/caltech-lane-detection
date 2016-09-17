@@ -56,7 +56,7 @@ clean:
 	rm -f *.a $(OBJECTS) $(BINARY)
 
 .cc.o:
-	g++ $< $(CFLAGS) $(LIBS) $(LDFLAGS) -c -o $@
+	g++ $< $(CFLAGS) $(LIBS) $(LDFLAGS) -c -w -std=c++11 -o $@
 
 # headers and sources
 .hh.cc:
